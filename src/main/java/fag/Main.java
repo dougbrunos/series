@@ -14,8 +14,8 @@ import java.util.Scanner;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 public class Main {
 
@@ -244,6 +244,7 @@ public class Main {
                 }
             } else {
                 System.out.println("Nenhuma série encontrada.");
+                lastSearchResults.clear();
             }
 
         } catch (IOException e) {
